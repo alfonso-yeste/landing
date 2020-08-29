@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Ford;
+    src: url(ford-antenna.otf);
+ }
+ 
+ * {
+    font-family: Ford;
+ }
+
+body {
+    font-weight: 400;
+}
+
+button {
+    border-radius:2px !important;
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+}
+
+.green-box {
+    background: #2B9BCA;
+    border: none;
+}
+
+.transition {
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s ;
+    -ms-transition: all ease 0.3s ;
+    -o-transition: all ease 0.3s ;
+    transition: all ease 0.3s ;
+}
+
+.s-1 {
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.4);
+}
+
+.model {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.model:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.coches {
+    height: auto !important;
+    width: 100% !important;
+}
+
+#clockdiv {
+    color: black;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 45px;
+}
+
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #F8F9FA;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 470px){
+
+    .title-banner {
+        font-size: 50px;
+    }
+    #banner {
+        padding: 80px 0 80px 0  !important;
+    }
+    #logo {
+        height: 50px;
+    }
+    .navbar {
+        padding: 15px 0;
+    }
+    .model {
+        padding: 0 !important;
+    }
+
+    #clockdiv {
+        font-size: 30px;
+    }
+    #clockdiv > div {
+        padding: 2px;
+    }
+    .coches-land {
+        margin-top: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .coches {
+        height: auto !important;
+        width: 100% !important;
+    }
+    .model {
+        margin-top: 30px !important;
+    }
+    .below-cover p {
+        margin-bottom: 10px !important;
+    }
+    .below-cover button {
+        padding: 10px !important;
+    }
+}
+@media (min-width: 1444px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+.brand-bg {
+    background-color: #2B9BCA;
+}
+
+.brand-color {
+    color: #2B9BCA;
+}

@@ -1,0 +1,20 @@
+# Activar Compresión Gzip
+gzip on;
+gzip_vary on;
+gzip_min_length 512;
+gzip_comp_level 6;
+gzip_proxied any;
+gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript text/x-js;
+gzip_buffers 16 8k;
+gzip_disable "MSIE [1-6].(?!.*SV1)";
+# Fin de Compresión Gzip
+
+
+location ~* .(jpg|jpeg|png|gif|ico|css|js)$ {expires 365d;}
+
+
+events { worker_connections 1024; }
+
+
+
+
